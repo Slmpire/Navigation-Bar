@@ -29,7 +29,7 @@ padding-top: 60px;
 @media (min-width:760px) and (max-width : 1500px) {
     .header{
         height: 60px;
-        background-color:red;
+        background-color: green;
         color:white;
         padding: 1.5rem;
     }
@@ -74,7 +74,7 @@ padding-top: 60px;
     .header:hover{
         font-weight: 600;
         transition:  all 0.5s;
-        color: blue;
+        color: white;
     }
     /* To keep the mobile nav hidden */
  .mobile_nav{
@@ -87,7 +87,7 @@ padding-top: 60px;
     }
     .header{
         height: 30px;
-        background-color:blue;
+        background-color: green;
         color:white;
         padding: 1.5rem;
     }
