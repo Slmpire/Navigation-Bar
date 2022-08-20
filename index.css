@@ -1,0 +1,262 @@
+
+/* //  general page css */
+html{
+    font-size: 90%;
+}
+html body{
+    width: 100%;
+    margin : 0px;
+    padding :0px;
+    overflow-x: hidden;
+    background-color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.content{
+padding: 16px;
+}
+/* To prevent sudden movement or
+clashing of the content and the header as 
+the header tries tonge a new position */
+.sticky + .content{
+padding-top: 60px;
+}
+/* // header css */
+@media (min-width:760px) and (max-width : 1500px) {
+    .header{
+        height: 60px;
+        background-color:red;
+        color:white;
+        padding: 1.5rem;
+    }
+    .header_nav{
+        display: flex;
+        position: fixed;
+        top: 0;
+        left: 50%;
+        padding: -2rem 5rem;
+        justify-content: space-around;
+        align-items: center;
+        z-index: 100;
+        width: 100%;
+        transform:translateX(-50%);
+        transition: 2s;
+    }
+    
+    .header_list{
+        list-style-type: none;
+        display: flex;
+        padding-top: 25px;
+        padding-left: 90px;
+    }
+    .header_name{
+        position: relative;
+        font-style: unset;
+        font-style: italic;
+        padding-top: 20px;
+        padding-left: 30px;
+    }
+    .header_item{
+        margin-left: 50px;
+        font-size: 1.6rem;
+        font-style: unset;
+        font-style: italic;
+    }
+    .header_link{
+        text-decoration: none;
+        color: white;
+        font-weight: 400;
+    }
+    .header:hover{
+        font-weight: 600;
+        transition:  all 0.5s;
+        color: blue;
+    }
+    /* To keep the mobile nav hidden */
+ .mobile_nav{
+    display: none;
+ }
+}
+@media (min-width:418px) and (max-width : 755px) {
+    .header_nav{
+        display: none;
+    }
+    .header{
+        height: 30px;
+        background-color:blue;
+        color:white;
+        padding: 1.5rem;
+    }
+    .mobile_nav{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: 10%;
+        padding: 0rem 5rem;
+        justify-content: center;
+        align-items: center;
+        z-index: 100;
+        width: 100%;
+        padding-left: 150px;
+        margin-top: 0px;
+        transform:translateX(-50%);
+        transition: 2s;
+        
+   
+        
+    }
+     .mobileList{
+        list-style-type: none;
+        display: block;
+        padding-top: 2px;
+        padding-left: 100px;
+        padding-right :50px; 
+        padding-bottom: 45px;
+        background-color: green;
+        margin-top: -11px;
+      
+    }
+    .mobile_name{
+        font-style: unset;
+        font-style: normal;
+        padding-top: 6px;
+        padding-left: 110px;
+        display: flex;
+        font-weight: bolder;
+    }
+    .mobile_link:hover{
+        color: #f7d390;
+    }
+    .mobile_item{
+        margin-left: 50px;
+        font-size: 1.6rem;
+        font-style: unset;
+        font-style: italic;
+        padding-top: 40px;
+        border-bottom-color: wheat;
+       box-shadow: blanchedalmond;
+       border-bottom-style: inset;
+       border-width: 1px;
+    }
+    .mobile_link{
+        text-decoration: none;
+        color: white;
+        font-weight: 400;
+    }
+    #bar{
+    display: flex;
+   position: relative;
+   padding-top: 0px;
+   padding-right: px;
+   color: aliceblue;
+    width: 50px;
+    height: 50px;
+
+   }
+   .nav_btn{
+    display: flex;
+    position: relative;
+    width: 60px;
+    height: 60px;
+    padding-right: 0px;
+    margin-right: 20px;
+    margin-top: -17px;
+    cursor: pointer;
+    background-color:transparent;
+}
+}
+ /* For Ipads */
+@media  (min-width:0px) and (max-width : 414px) {
+      /* To keep the desktop nav hidden */
+    .header_nav{
+        display: none;
+    }
+    .header{
+        height: 30px;
+        background-color:green;
+        color:white;
+        padding: 1.5rem;
+    }
+    .mobile_nav{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: 20%;
+        padding: 0rem 5rem;
+        justify-content: center;
+        align-items: center;
+        z-index: 100;
+        width: 100%;
+        margin-top: 0px;
+        transform:translateX(-50%);
+        transition: 2s;
+        
+   
+        
+    }
+     .mobileList{
+        list-style-type: none;
+        display: block;
+        padding-top: 2px;
+        padding-left: 100px;
+        padding-right :50px; 
+        padding-bottom: 45px;
+        background-color: green;
+        margin-top: -11px;
+      
+    }
+    .mobile_name{
+        font-style: unset;
+        font-style: normal;
+        padding-top: 6px;
+        padding-left: 110px;
+        display: flex;
+        font-weight: bolder;
+    }
+    .mobile_link:hover{
+        color: #f7d390;
+    }
+    .mobile_item{
+        margin-left: 50px;
+        font-size: 1.6rem;
+        font-style: unset;
+        font-style: italic;
+        padding-top: 40px;
+        border-bottom-color: wheat;
+       box-shadow: blanchedalmond;
+       border-bottom-style: inset;
+       border-width: 1px;
+    }
+    .mobile_link{
+        text-decoration: none;
+        color: white;
+        font-weight: 400;
+    }
+    #bar{
+    display: flex;
+   position: relative;
+   padding-top: 0px;
+   padding-right: px;
+   color: aliceblue;
+    width: 50px;
+    height: 50px;
+
+   }
+   .nav_btn{
+    display: flex;
+    position: relative;
+    width: 60px;
+    height: 60px;
+    padding-right: 0px;
+    margin-right: 20px;
+    margin-top: -17px;
+    cursor: pointer;
+    background-color:transparent;
+}
+}
